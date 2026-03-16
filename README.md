@@ -80,3 +80,21 @@ output/
       └── 12/
           └── old_notes.md
 ```
+
+---
+
+## Running Automated Tests
+
+The project includes an automated test script that verifies the file sorting behavior by creating temporary files with specific modified dates, running the program, and checking the output directory structure.
+
+To run the tests from the root of the project, first compile the source and test files:
+
+```bash
+javac -d . src/com/donkersloot/utils/FileSorter.java src/com/donkersloot/utils/FileSorterTest.java
+```
+
+Then, run the compiled test class:
+
+```bash
+java com.donkersloot.utils.FileSorterTest
+```
